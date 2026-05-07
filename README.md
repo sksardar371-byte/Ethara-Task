@@ -31,42 +31,6 @@ Email: admin@example.com
 Password: admin123
 ```
 
-## Run Locally
-
-Requirements:
-
-- Java 17
-- Maven
-
-Start the project:
-
-```bash
-mvn spring-boot:run
-```
-
-Open the app:
-
-```text
-http://localhost:8080
-```
-
-Local data is saved in the `data` folder using H2.
-
-## Railway Deployment
-
-1. Push the project to GitHub.
-2. Create a new Railway project.
-3. Select this GitHub repository.
-4. Add a PostgreSQL database service in Railway.
-5. Add this variable in the app service:
-
-```text
-JWT_SECRET=your-long-secret-key-here
-```
-
-Railway will build the app using Nixpacks and start it with the command from `railway.toml`.
-
-After deployment, generate a public domain from Railway's Networking settings.
 
 ## API Routes
 
@@ -84,8 +48,3 @@ After deployment, generate a public domain from Railway's Networking settings.
 - `DELETE /api/tasks/{id}`
 - `GET /api/tasks/dashboard`
 
-## Submission Links
-
-- Live URL:
-- GitHub Repo: https://github.com/sksardar371-byte/Ethara-Task
-- Demo Video:
