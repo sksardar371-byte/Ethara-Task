@@ -1,0 +1,5 @@
+[phases.build]
+cmds = ["/bin/maven -DskipTests package"]
+
+[start]
+cmd = "java -Dserver.port=$PORT $JAVA_OPTS -jar target/*jar"
